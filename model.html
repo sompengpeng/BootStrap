@@ -21,6 +21,7 @@
       <style>
         body{
            padding-top: 50px;
+           padding-bottom: 70px;
         }
         .carousel{
           height: 500px;
@@ -49,6 +50,22 @@
         hr .divier{
           margin: 40px 0;
         }
+        .feature{
+          padding: 30px 0;
+        }
+        .feature-heading{
+          font-size: 50px;
+          color:#2e6296;
+          margin-top: 120px;
+        }
+        .feature-heading .text-muted{
+          font-size: 28px;
+          color: #999；
+        }
+        .feature .feature-image{
+            width: 90%;
+            height: 90%;
+        }
       </style>
    </head>
    <body>
@@ -75,17 +92,18 @@
                           <li class="dropdown">
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown">仓库  <b class="caret"></b></a>
                               <ul class="dropdown-menu">
-                                  <li> <a href="#">电气调试人员</a></li>
+                                  <li> <a href="#home">电气调试人员</a></li>
                                   <li class="divider"></li>
-                                  <li> <a href="#">组装调试器人员</a></li>
+                                  <li> <a href="#profile">组装调试器人员</a></li>
                                   <li class="divider"></li>
-                                  <li> <a href="#">装车人员</a></li>
+                                  <li> <a href="#messages">装车人员</a></li>
                                   <li class="divider"></li>
                                   <li> <a href="#">仓库办公人员</a></li>
                                   <li class="divider"></li>
                                   <li><a href="#">电气理线人员</a></li>
                               </ul>
                           </li>
+                          <li><a href="#" data-toggle="modal" data-target="#about">关于</a></li>
                       </ul>
                   </div>
             </div>
@@ -107,7 +125,7 @@
                     <div class="carousel-caption">
                         <h1> First</h1>
                         <p> a true wonder of nature实乃自然界一大奇观</p>
-                        <p><a herf="./table/text.xlsx" class="btn btn-lg btn-primary" role="button" target="_blank">点我下载</a> 
+                        <p><a herf="../imgers/01.jpg" class="btn btn-lg btn-primary" role="button" target="_blank">点我下载</a> 
                         </p>
                     </div>
                 </div>
@@ -116,7 +134,7 @@
                     <div class="carousel-caption">
                         <h1> Second</h1>
                         <p> enclosed/surrounded by the hill on one side and waters on the other依山伴水</p>
-                        <p><a herf="./table/text.xlsx" class="btn btn-lg btn-primary" role="button" target="_blank">点我下载</a> 
+                        <p><a herf="imgers/02.jpg" class="btn btn-lg btn-primary" role="button" target="_blank">点我下载</a> 
                         </p>
                     </div>
                 </div>
@@ -125,7 +143,7 @@
                     <div class="carousel-caption">
                       <h1> Third </h1>
                         <p> the Jiuzhaigou Nature Reserve九寨沟自然保护区</p>
-                        <p><a herf="table/a.txt" class="btn btn-lg btn-primary" role="button" target="_blank">点我下载</a> 
+                        <p><a herf="imgers/03.jpg" class="btn btn-lg btn-primary" role="button" target="_blank">点我下载</a> 
                         </p>
                     </div>           
                 </div>
@@ -173,8 +191,93 @@
               </div>
             </div>
             <hr class="divier">
+
+            <!--标签 开始-->
+            <ul class="nav nav-tabs" role="tablist" id="tab-list">
+                <li class="active"><a href="#home" role="tab" data-toggle="tab">HOME</a></li>
+                <li><a href="#profile" role="tab" data-toggle="tab">PROFILE</a></li>
+                <li><a href="#messages" role="tab" data-toggle="tab">MESSAGES</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="home">
+                  <div class="row feature">
+                      <div class="col-md-7">
+                        <h2 class="feature-heading">SOM-Home<span class="text-muted">本站免费提供了建站相关的技术文档，帮助广大web技术爱好者快速入门并建立自己的网站。菜鸟先飞早入行——学的不仅是技术，更是梦想。</span></h2> 
+                      </div>
+                      <div class="col-md-5">
+                        <img class="feature-image img-responsive"  src="imgers/tab-01.jpg" alt="家庭">
+                      </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="profile">
+                  <div class="row feature">
+                      <div class="col-md-7">
+                        <img class="feature-image img-responsive"  src="imgers/tab-02.jpg" alt="profile">
+                      </div>
+                      <div class="col-md-5">
+                        <h2 class="feature-heading">SOM-Profile<span class="text-muted">最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple 
+                      TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</span></h2> 
+                      </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="messages">
+                  <div class="row feature">
+                    <div class="col-md-7">
+                      <h2 class="feature-heading">SOM-Messages<span class="text-muted">Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。</span></h2> 
+                    </div>
+                    <div class="col-md-5">
+                      <img class="feature-image img-responsive"  src="imgers/tab-03.jpg" alt="messages">
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!--标签 结束-->
+        <!--footer start-->
+        <hr class="divier">
+        
+        <footer>
+          <p class="pull-right"><a href="#top">回到顶部</a></p>  
+          <p>@2017 西威电梯江苏有限公司-生产部</p>
+        </footer>
+        <!--footer end-->
         </div>
         <!--Container end-->
+        
+        <!--弹出框 start-->
 
+        <div class="modal fade" id="about">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!--header-->
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">
+                        &times;<span class="sr-only">Close</span>
+                      </span>
+                      </button>
+                          <h4 class="modal-title">关于</h4>
+                    </div>
+                    <!--body-->
+                    <div class="modal-body">
+                      <p>...西威电梯江苏有限公司-生产部...</p>
+                    </div>
+                    <!--footer-->
+                    <div class="modal-footer">
+                      <button class="btn btn-default" type="button" data-dismiss="modal"> 确认</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--弹出框 end-->
+        <script>
+          $(document).ready(function(){
+
+            $("#bs-example-navbar-collapse-1 .dropdown-menu a").click(function(){
+               var href=$(this).attr("href");
+               $("#tab-list a[href='" + href + "']").tab("show");
+            });
+          });
+
+        </script>
    </body>
 </html>
